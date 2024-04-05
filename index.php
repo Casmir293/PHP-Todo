@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP TODO</title>
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>PHP Task Manager</h1>
-    <form action="backend/addTask.php" method="post">
-        <input type="text" name="task" placeholder="Input task...">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form action="./backend/add_task.php" method="POST">
+            <input type="text" name="task" placeholder="Enter a new task">
+            <button type="submit">Add Task</button>
+        </form>
 
-    <h2>My Tasks</h2>
-    <ul>
-        <?php
-        include_once 'backend/taskList.php';
-        ?>
-    </ul>
+        <h2>Tasks:</h2>
+        <ul>
+            <?php include_once './backend/tasks.php'; ?>
+        </ul>
+    </div>
 </body>
 </html>
