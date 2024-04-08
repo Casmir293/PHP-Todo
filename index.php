@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <h1>To-Do List</h1>
-        <form action="" method="POST">
-            <input type="text" name="task" placeholder="Enter a new task">
+        <form action="index.php" method="POST">
+            <input type="text" name="task" placeholder="Enter a new task" required>
             <button type="submit">Add Task</button>
         </form>
 
