@@ -24,5 +24,5 @@ if (isset($_GET['delete']) && isset($_SESSION['tasks'][$_GET['delete']])) {
 
 // Display tasks
 foreach ($_SESSION['tasks'] as $key => $task) {
-    echo "<li>$task <a href=\"backend/tasks.php?complete=$key\">[Complete]</a> <a href=\"backend/tasks.php?delete=$key\">[Delete]</a></li>";
+    echo "<li>$task <a href=\"index.php?complete=$key\">[Complete]</a> <a href=\"index.php?delete=$key\">[Delete]</a></li>";
 }

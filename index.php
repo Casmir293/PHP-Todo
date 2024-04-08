@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>To-Do List</h1>
-        <form action="./backend/add_task.php" method="POST">
+        <form action="" method="POST">
             <input type="text" name="task" placeholder="Enter a new task">
             <button type="submit">Add Task</button>
         </form>
